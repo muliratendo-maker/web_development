@@ -1,0 +1,19 @@
+p{ 
+    /*padding: 15px;*/
+}
+.first{
+    color: rgb(109, 75, 33);
+    font-size: 100px;
+}
+.second{
+    color: azure;
+    font-size: 70px;
+}
+.done{
+    margin: auto;
+    width: 67%;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid black;
+}

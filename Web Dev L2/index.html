@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+            }
+            #tbl{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                overflow-x: auto;
+            }
+            tr:hover {
+                background-color: rgb(255, 218, 56);
+            }
+            td, th {
+                border: 1px solid #0a0a0a;
+                text-align: left;
+                padding: 8px;
+                vertical-align: top;
+                padding-bottom: 15px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            tr:hover:nth-child(even) {
+                background-color: #ff3636;
+            }
+            #pad{
+                padding-bottom: 50px;
+            }
+            
+            #pad1{
+                padding-bottom: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Table Exercise</h1>
+        <div id="tbl">
+            <table>
+                <tr>
+                    <th colspan="6" style=" text-align: center;">UGANDA MARTYRS SENIOR SECONDARY SCHOOL TIMETABLE</th>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                </tr>
+                <tr>
+                    <td>9:00-10:00</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td>Physics</td>
+                    <td rowspan="3">Chemistry</td>
+                    <td>History</td>
+                </tr>
+                <tr>
+                    <td>10:00-11:00</td>
+                    <td id="pad">Math</td>
+                    <td colspan="2">Computer Lab</td>
+                    <td>Geography</td>
+                </tr>
+                <tr>
+                    <td>11:00-12:00</td>
+                    <td>Sports</td>
+                    <td rowspan="2">Biology</td>
+                    <td>English</td>
+                    <td rowspan="2">Free Period</td>
+                </tr>
+                <tr>
+                    <td>12:00-1:00</td>
+                    <td  id="pad1">Library</td>
+                    <td colspan="2">Library</td>
+                </tr>
+                <tr>
+                    <td>1:00-2:00</td>
+                    <td colspan="5" style="margin-bottom: 5px;">Lunch Break</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
